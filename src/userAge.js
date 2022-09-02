@@ -21,4 +21,7 @@ export class UserLife extends UserAge {
   mercuryLifeExp() {
     return this.mercuryExp - this.mercury;
   }
+  venusLifeExp() {
+    return this.venusExp - this.venus
+  }
 }
