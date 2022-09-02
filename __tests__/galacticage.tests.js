@@ -14,7 +14,11 @@ describe ('UserAge', () => {
     expect(user.jupiter).toEqual(0);
   });
   test('should add the different age to user.mercury', () => {
-    user.mercuryAge()
-    expect(user.mercury).toEqual(5.52)
+    user.mercuryAge();
+    expect(user.mercury).toEqual(5.52);
+  });
+  test('should add the different age to user.venus', () => {
+    user.venusAge();
+    expect(user.venus).toEqual(14.26);
   });
 });
