@@ -53,6 +53,11 @@ describe ('UserAge', () => {
       expect(user.earthLifeExp()).toBeCloseTo(57, 0.1)
     });
     test('should determine if lived over life expectancy if life lived > life expectancy', () => {
-      
+      let userOver = new UserLife('Malcolm', 70, 60);
+      expect(userOver.earthTime()).toBeCloseTo(10, 0.1);
+      expect(userOver.mercuryTime()).toBeCloseTo(41.66, 0.1);
+      expect(userOver.venusTime()).toBeCloseTo(16.12, 0.1);
+      expect(userOver.jupiterTime()).toBeCloseTo(0.84, 0.1);
+
     });
   });
