@@ -38,6 +38,7 @@ describe ('UserAge', () => {
       expect(user.jupiterExp).toBeCloseTo(6.74, 0.1);
     });
     test('should determine how many years the user has left on mercury', () => {
-      expect(user.mercuryLifeExp()).toBeCloseTo()
+      expect(user.mercuryLifeExp()).toBeCloseTo(237.5)
+      console.log(user.mercuryLifeExp())
     });
   });
