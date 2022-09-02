@@ -24,7 +24,10 @@ export class UserAge {
     this.jupiter = ageJupiter
   }
   spaceAgeCalculator() {
-    
+    this.mercuryAge();
+    this.venusAge();
+    this.marsAge();
+    this.jupiterAge();
   }
 
 }

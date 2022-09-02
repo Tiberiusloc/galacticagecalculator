@@ -33,9 +33,9 @@ describe ('UserAge', () => {
     user.spaceAgeCalculator();
     expect(user.name).toEqual("Tiberius");
     expect(user.earth).toEqual("23");
-    expect(user.mercury).toBeCloseTo(5.52, 1);
-    expect(user.venus).toBeCloseTo(14.26, 1);
-    expect(user.mars).toBeCloseTo(43.24, 1);
-    expect(user.jupiter).toBeCloseTo(272.78, 1);
+    expect(user.mercury).toBeCloseTo(5.52, 0.1);
+    expect(user.venus).toBeCloseTo(14.26, 0.1);
+    expect(user.mars).toBeCloseTo(43.24, 0.1);
+    expect(user.jupiter).toBeCloseTo(272.78, 0.1);
   });
 });
