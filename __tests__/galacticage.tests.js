@@ -43,4 +43,7 @@ describe ('UserAge', () => {
     test('should determine how many years the user has left on venus', () => {
       expect(user.venusLifeExp()).toBeCloseTo(91.94, 0.1)
     });
+    test('should determine how many years the user has left on mars', () => {
+      expect(user.marsLifeExp()).toBeCloseTo(30.32, 0.1)
+    });
   });
