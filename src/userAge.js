@@ -13,3 +13,7 @@ export class UserAge {
     this.jupiterExp = (this.earthExp / 11.86)
   }
 }
+
+export class UserLife extends UserAge {
+  
+}
