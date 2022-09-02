@@ -13,20 +13,16 @@ export class UserAge {
     this.jupiterExp = 0;
   }
   mercuryAge() {
-    let ageMercury = this.earth * 0.24
-    this.mercury += ageMercury
+    this.mercury += (this.earth / 0.24);
   }
   venusAge() {
-    let ageVenus = this.earth * 0.62
-    this.venus = ageVenus
+    this.venus += (this.earth / 0.62);
   }
   marsAge() {
-    let ageMars = this.earth * 1.88
-    this.mars = ageMars
+    this.mars += (this.earth / 1.88);
   }
   jupiterAge() {
-    let ageJupiter = this.earth * 11.86
-    this.jupiter = ageJupiter
+    this.jupiter += (this.earth / 11.86);
   }
   spaceAgeCalculator() {
     this.mercuryAge();
