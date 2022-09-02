@@ -15,6 +15,6 @@ describe ('UserAge', () => {
   });
   test('should add the different age to user.mercury', () => {
     user.mercuryAge()
-    expect(user.mercury).toEqual(9.6)
+    expect(user.mercury).toEqual(5.52)
   });
 });
