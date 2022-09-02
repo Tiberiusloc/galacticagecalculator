@@ -52,4 +52,7 @@ describe ('UserAge', () => {
     test('should determine how many years the user has left on earth', () => {
       expect(user.earthLifeExp()).toBeCloseTo(57, 0.1)
     });
+    test('should determine if lived over life expectancy if life lived > life expectancy', () => {
+      
+    });
   });
