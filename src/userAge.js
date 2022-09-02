@@ -7,4 +7,8 @@ export class UserAge {
     this.mars = 0;
     this.jupiter = 0;
   }
+  mercuryAge() {
+    let ageMercury = this.earth * 0.24
+    this.mercury += ageMercury
+  }
 }
