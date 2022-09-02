@@ -34,4 +34,10 @@ describe ('UserAge', () => {
     expect(user.mercuryExp).toBeCloseTo(333.33, 0.1);
     console.log(user.mercuryExp)
   });
+  test('should calculate life expectancy on all planets', () => {
+    expect(user.mercuryExp).toBeCloseTo();
+    expect(user.venusExp).toBeCloseTo();
+    expect(user.marsExp).toBeCloseTo();
+    expect(user.jupiterExp).toBeCloseTo();
+  });
 });

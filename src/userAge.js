@@ -8,8 +8,8 @@ export class UserAge {
     this.mars = (this.earth / 1.88);
     this.jupiter = (this.earth / 11.86);
     this.mercuryExp = (this.earthExp / 0.24)
-    this.venusExp = 0;
-    this.marsExp = 0;
-    this.jupiterExp = 0;
+    this.venusExp = (this.earthExp / 0.62)
+    this.marsExp = (this.earthExp / 1.88)
+    this.jupiterExp = (this.earthExp / 11.86)
   }
 }
