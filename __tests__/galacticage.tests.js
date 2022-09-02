@@ -22,22 +22,13 @@ describe ('UserAge', () => {
   test('should add the different age to user.jupiter', () => {
     expect(user.jupiter).toBeCloseTo(1.93, 0.1)
   });
-  test('should use prototypes to create user age for planets specified in user age object', () => {
-    expect(user.name).toEqual("Tiberius");
-    expect(user.earth).toEqual(23);
-    expect(user.mercury).toBeCloseTo(95.83, 0.1);
-    expect(user.venus).toBeCloseTo(37.09, 0.1);
-    expect(user.mars).toBeCloseTo(12.23, 0.1);
-    expect(user.jupiter).toBeCloseTo(1.93, 0.1);
-  });
   test('should calculate life expectancy on mercury and add it to the user.mercuryExp', () => {
     expect(user.mercuryExp).toBeCloseTo(333.33, 0.1);
-    console.log(user.mercuryExp)
   });
   test('should calculate life expectancy on all planets', () => {
-    expect(user.mercuryExp).toBeCloseTo();
-    expect(user.venusExp).toBeCloseTo();
-    expect(user.marsExp).toBeCloseTo();
-    expect(user.jupiterExp).toBeCloseTo();
+    expect(user.mercuryExp).toBeCloseTo(333.33, 0.1);
+    expect(user.venusExp).toBeCloseTo(129.03, 0.1);
+    expect(user.marsExp).toBeCloseTo(42.55, 0.1);
+    expect(user.jupiterExp).toBeCloseTo(6.74, 0.1);
   });
 });
