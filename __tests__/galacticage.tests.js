@@ -23,6 +23,6 @@ describe ('UserAge', () => {
   });
   test('should add the different age to user.mars', () => {
     user.marsAge();
-      expect(user.mars).toEqual(43.24);
+      expect(user.mars).toEqual(43.239999999999995);
   });
 });
