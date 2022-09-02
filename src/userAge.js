@@ -23,4 +23,8 @@ export class UserAge {
     let ageJupiter = this.earth * 11.86
     this.jupiter = ageJupiter
   }
+  spaceAgeCalculator() {
+    
+  }
+
 }
