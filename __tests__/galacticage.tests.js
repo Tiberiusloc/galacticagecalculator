@@ -58,6 +58,8 @@ describe ('UserAge', () => {
       expect(userOver.mercuryLifeExp()).toBeCloseTo-(41.66, 0.1);
       expect(userOver.venusLifeExp()).toBeCloseTo(-16.12, 0.1);
       expect(userOver.jupiterLifeExp()).toBeCloseTo(-0.84, 0.1);
+    });
+    test('should determine if user has lived over life expectancy and return how many years over with a positive integer', () => {
 
     });
   });
