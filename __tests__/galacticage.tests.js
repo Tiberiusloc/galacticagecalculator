@@ -31,6 +31,7 @@ describe ('UserAge', () => {
     expect(user.jupiter).toBeCloseTo(1.93, 0.1);
   });
   test('should calculate life expectancy on mercury and add it to the user.mercuryExp', () => {
-
+    expect(user.mercuryExp).toBeCloseTo(333.33, 0.1);
+    console.log(user.mercuryExp)
   });
 });
