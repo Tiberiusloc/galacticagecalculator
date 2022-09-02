@@ -25,7 +25,7 @@
 * _Starting a development server with $ npm run start_
 * _Linting JS files in the src folder with $ npm run lint_
 * _Running tests with Jest using $ npm run test_
-* Open index.html in your browser default browser.
+* Open index.html in your browser default browser
 
 ## Known Bugs
 
