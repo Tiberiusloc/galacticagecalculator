@@ -38,4 +38,7 @@ describe ('UserAge', () => {
     expect(user.mars).toBeCloseTo(43.24, 0.1);
     expect(user.jupiter).toBeCloseTo(272.78, 0.1);
   });
+  test('should calculate life expectancy on each planet to UserAge', () => {
+
+  });
 });
