@@ -50,6 +50,6 @@ describe ('UserAge', () => {
       expect(user.jupiterLifeExp()).toBeCloseTo(4.81, 0.1)
     });
     test('should determine how many years the user has left on earth', () => {
-      expect(user.earthLifeExp()).toBeCloseTo(77, 0.1)
+      expect(user.earthLifeExp()).toBeCloseTo(57, 0.1)
     });
   });

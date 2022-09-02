@@ -30,4 +30,7 @@ export class UserLife extends UserAge {
   jupiterLifeExp() {
     return this.jupiterExp - this.jupiter
   }
+  earthLifeExp() {
+    return this.earthExp - this.earth
+  }
 }
