@@ -21,4 +21,8 @@ describe ('UserAge', () => {
     user.venusAge();
     expect(user.venus).toEqual(14.26);
   });
+  test('should add the different age to user.mars', () => {
+    user.marsAge();
+      expect(user.mars).toEqual(43.24);
+  });
 });
