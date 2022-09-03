@@ -52,13 +52,6 @@ describe ('UserAge', () => {
     test('should determine how many years the user has left on earth', () => {
       expect(user.earthLifeExp()).toBeCloseTo(57, 0.1)
     });
-    test('should determine if lived over life expectancy if life lived > life expectancy should return negative integer', () => {
-      let userOver = new UserLife('Malcolm', 70, 60);
-      expect(userOver.earthLifeExp()).toBeCloseTo(10, 0.1);
-      expect(userOver.mercuryLifeExp()).toBeCloseTo(-41.66, 0.1);
-      expect(userOver.venusLifeExp()).toBeCloseTo(-16.12, 0.1);
-      expect(userOver.jupiterLifeExp()).toBeCloseTo(-0.84, 0.1);
-    });
     test('should determine if user has lived over life expectancy and return how many years over with a positive integer', () => {
       let userOver = new UserLife('Malcolm', 70, 60);
       expect(userOver.earthLifeExp()).toBeCloseTo(10, 0.1);
