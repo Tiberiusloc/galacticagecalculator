@@ -52,11 +52,11 @@ describe ('UserAge', () => {
     test('should determine how many years the user has left on earth', () => {
       expect(user.earthLifeExp()).toBeCloseTo(57, 0.1)
     });
-      test('should take forced positive integer and turn into string saying how far over life they are', () => {
+      test('should take forced positive integer and turn into string saying how far over life they are and match positive integer in string', () => {
         let userOver = new UserLife('Malcolm', 70, 60);
-        expect(userOver.earthLifeExp()).toBeCloseTo(10, 0.1);
-        expect(userOver.mercuryLifeExp()).toBeCloseTo(41.66, 0.1);
-        expect(userOver.venusLifeExp()).toBeCloseTo(16.12, 0.1);
-        expect(userOver.jupiterLifeExp()).toBeCloseTo(0.84, 0.1);
+        expect(userOver.earthLifeExp()).toMatch(/10/)
+        expect(userOver.mercuryLifeExp()).toMatch(/42/);
+        expect(userOver.venusLifeExp()).toMatch(/16/);
+        expect(userOver.jupiterLifeExp()).toMatch(/1/);
       });
   });
