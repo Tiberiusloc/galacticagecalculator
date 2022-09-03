@@ -29,7 +29,7 @@ export class UserLife extends UserAge {
   mercuryLifeExp() {
     let mercAge = this.mercuryExp - this.mercury;
     if (mercAge < 0 ) {
-    return Math.abs(mercAge);
+    return "Congratulations you're " + Math.round(Math.abs(mercAge)) + " Over your life expectancy!";
     } else {
       return mercAge
     }
@@ -37,7 +37,7 @@ export class UserLife extends UserAge {
   venusLifeExp() {
     let venusAge = this.venusExp - this.venus
     if (venusAge < 0 ) {
-    return Math.abs(venusAge);
+    return "Congratulations you're " + Math.round(Math.abs(venusAge)) + " over your life expectancy!";
   } else { 
     return venusAge
   }
@@ -45,7 +45,7 @@ export class UserLife extends UserAge {
   marsLifeExp() {
     let marsAge =  this.marsExp - this.mars
     if (marsAge < 0 ) {
-    return Math.abs(marsAge)
+    return "Congratulations you're " + Math.round(Math.abs(marsAge)) + " over your life expectancy!";
     } else {
       return marsAge
     }
@@ -53,7 +53,7 @@ export class UserLife extends UserAge {
   jupiterLifeExp() {
     let jupiterAge = this.jupiterExp - this.jupiter
     if (jupiterAge < 0) {
-    return Math.abs(jupiterAge)
+    return "Congratulations you're " + Math.round(Math.abs(jupiterAge)) + " over your life expectancy!";
     } else {
     return jupiterAge
     }
