@@ -19,18 +19,43 @@ export class UserLife extends UserAge {
     this.jupiterExp = (this.earthExp / 11.86)
   }
   earthLifeExp() {
-    return this.earthExp - this.earth
+    let earthAge = this.earthExp - this.earth
+    if (earthAge < 0 ) {
+      return Math.abs(earthAge);
+    } else {
+      return earthAge
+    }
   }
   mercuryLifeExp() {
-    return this.mercuryExp - this.mercury;
+    let mercAge = this.mercuryExp - this.mercury;
+    if (mercAge < 0 ) {
+    return Math.abs(mercAge);
+    } else {
+      return mercAge
+    }
   }
   venusLifeExp() {
-    return this.venusExp - this.venus
+    let venusAge = this.venusExp - this.venus
+    if (venusAge < 0 ) {
+    return Math.abs(venusAge);
+  } else { 
+    return venusAge
   }
+}
   marsLifeExp() {
-    return this.marsExp - this.mars
+    let marsAge =  this.marsExp - this.mars
+    if (marsAge < 0 ) {
+    return Math.abs(marsAge)
+    } else {
+      return marsAge
+    }
   }
   jupiterLifeExp() {
-    return this.jupiterExp - this.jupiter
+    let jupiterAge = this.jupiterExp - this.jupiter
+    if (jupiterAge < 0) {
+    return Math.abs(jupiterAge)
+    } else {
+    return jupiterAge
+    }
   }
 }
